@@ -14,7 +14,8 @@
 
 html {
     box-sizing: border-box;
-    font-size: 62.5%; /* Para hacer que un rem sea igual a 10px*/
+    font-size: 62.5%;
+    /* Para hacer que un rem sea igual a 10px*/
 }
 
 *,
@@ -23,80 +24,94 @@ html {
     box-sizing: inherit;
 }
 
-body{
+body {
     background-color: var(--primario);
     font-size: 1.6rem;
     line-height: 1.5;
 }
 
-p{
+p {
     font-size: 1.5rem;
     color: var(--blanco);
     font-family: Arial, Helvetica, sans-serif;
 }
 
-a{
+a {
     text-decoration: none;
 }
 
-img{
+img {
     max-width: 100%;
 }
 
-.contenedor{
+.contenedor {
     max-width: 120rem;
     margin: 0 auto;
 }
 
-h1, h2, h3{
+h1,
+h2,
+h3 {
     text-align: center;
     color: var(--secundario);
     font-family: var(--fuentePrincipal);
 }
 
-h1{
+h1 {
     font-size: 4rem;
 }
 
-h2{
+h2 {
     font-size: 3rem;
 }
 
-h3{
+h3 {
     font-size: 2rem;
 }
 
 /* Logotipo */
+/* Header */
 
-header{
+.header {
     display: flex;
-    flex-direction: row;
     justify-content: center;
 }
 
-/* Navegacion principal */
+.header__logo {
+    margin: 3rem 0;
+}
 
-.nav-bg{
+/* Navegacion*/
+
+.navegacion {
+    background-color: var(--primarioOscuro);
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.navegacion__enlace {
+    font-family: var(--fuentePrincipal);
+    padding: 1rem;
+    color: var(--blanco);
+    font-size: 3rem;
+}
+
+.navegacion__enlace:hover,
+.navegacion__enlace--activo {
+    color: var(--secundario);
+}
+
+/** Footer **/
+
+.footer {
     background-color: var(--primarioOscuro);
 }
 
-.navegadorPrincipal{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-}
-
-.navegadorPrincipal a{
-    color: var(--secundario);
-    padding: 1rem;
-    font-weight: bold;
-    font-size: 2rem;
-}
-
-.navegadorPrincipal a:hover{
-    color: var(--negro);
-    padding: 1rem;
-    font-weight: bold;
-    font-size: 2rem;
-    background-color: var(--secundario);
+.footer__texto {
+    padding: 1rem 0;
+    margin-top: 2rem;
+    text-align: center;
+    font-family: var(--fuentePrincipal);
+    font-size: 2.2rem;
 }
