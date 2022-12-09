@@ -1,0 +1,102 @@
+/* Custom */
+:root {
+    --primario: #9C72BB;
+    --primarioOscuro: #891190;
+    --secundario: #FFCE00;
+    --secundarioOscruo: rgb(233, 287, 2);
+    --blanco: #ffffff;
+    --negro: #000;
+
+    --fuentePrincipal: 'Staatliches', cursive;
+}
+
+/* Globales */
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%; /* Para hacer que un rem sea igual a 10px*/
+}
+
+*,
+*:after,
+*:before {
+    box-sizing: inherit;
+}
+
+body{
+    background-color: var(--primario);
+    font-size: 1.6rem;
+    line-height: 1.5;
+}
+
+p{
+    font-size: 1.5rem;
+    color: var(--blanco);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+a{
+    text-decoration: none;
+}
+
+img{
+    max-width: 100%;
+}
+
+.contenedor{
+    max-width: 120rem;
+    margin: 0 auto;
+}
+
+h1, h2, h3{
+    text-align: center;
+    color: var(--secundario);
+    font-family: var(--fuentePrincipal);
+}
+
+h1{
+    font-size: 4rem;
+}
+
+h2{
+    font-size: 3rem;
+}
+
+h3{
+    font-size: 2rem;
+}
+
+/* Logotipo */
+
+header{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+/* Navegacion principal */
+
+.nav-bg{
+    background-color: var(--primarioOscuro);
+}
+
+.navegadorPrincipal{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.navegadorPrincipal a{
+    color: var(--secundario);
+    padding: 1rem;
+    font-weight: bold;
+    font-size: 2rem;
+}
+
+.navegadorPrincipal a:hover{
+    color: var(--negro);
+    padding: 1rem;
+    font-weight: bold;
+    font-size: 2rem;
+    background-color: var(--secundario);
+}
